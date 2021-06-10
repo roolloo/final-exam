@@ -14,9 +14,16 @@ export default {
 </script>
 
 <style lang="scss">
-   body{
-		
-	}
+body {
+  background: #fff;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
 </style>
 
 
