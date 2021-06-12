@@ -5,7 +5,7 @@
 	width: 100%
 	max-width: 100%
 	background: url("./assetsPC/header-bg.png") center/cover no-repeat
-	height: 800px
+	// height: 800px
 	color: #fff
 
 .conteiner
@@ -55,17 +55,17 @@
 		transform: scaleX(1)
 
 .header__content
-	margin: 130px auto
+	margin: 150px auto
 	display: flex
 	padding-top: 100px
 	justify-content: space-between
 	align-items: center
 
 .header-content__data
-	transform: rotate(-90deg)
+	transform: rotate(-90deg) translate(80px,-60px)
 	margin: 0
-	height: 80px
-	padding-bottom: 50px
+	height: 0px
+	padding-bottom: 0px
 	padding-left: 0px
 	margin-right: -225px
 	box-sizing: border-box
@@ -101,7 +101,10 @@
 	line-height: 0px
 	text-transform: uppercase
 	letter-spacing: 1px
-
+   &::after
+		content: ''
+		display: flex
+		
 .header__socual
 	width: 60px
 .header-content__btn
@@ -148,3 +151,32 @@
 		width: 12px
 		height: 12px
 		background: url('./assetsPC/down-arrow.svg') center/cover no-repeat
+		position: absolute
+		left: 24px
+		top: 25px
+		z-index: 4
+		opacity: 0.9
+.header__socual
+	width: 60px
+	height: 220px
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	transform: translate(-60px,-70px)
+
+.header-socual__link
+	width: 60px
+	height: 60px
+	background: none
+	border: 1px solid #ffffff30
+	border-radius: 50%
+	padding-top: 18px
+	font-size: 23px
+	text-align: center
+	box-sizing: border-box
+	display: block
+	color: #fff
+	transition: 0.5s
+	&:hover
+		color: #000
+		background: #fff

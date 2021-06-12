@@ -36,9 +36,9 @@
       </nav>
 
       <div class="header__content">
-        <p class="header-content__data">
+        <div class="header-content__data">
           Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM
-        </p>
+        </div>
         <div class="header-content__center">
           <p class="header-content__title">RESTAURANT</p>
           <h1 class="header-content__oglovlenie">hungry people</h1>
@@ -51,9 +51,15 @@
         </div>
 
         <div class="header__socual">
-          <a href="" class="header-socual__link"></a>
-          <a href="" class="header-socual__link"></a>
-          <a href="" class="header-socual__link"></a>
+          <a href="" class="header-socual__link"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="" class="header-socual__link"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="" class="header-socual__link"
+            ><i class="fab fa-instagram"></i
+          ></a>
         </div>
       </div>
     </div>
