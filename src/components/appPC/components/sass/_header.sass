@@ -1,3 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap')
+@import url('/fonts.css')
 .header
 	width: 100%
 	max-width: 100%
+	background: url("./assetsPC/header-bg.png") center/cover no-repeat
+	height: 800px
+	color: #fff
+
+.conteiner
+	width: 1440px
+	max-width: 100%
+	max-height: 100%
+	margin: 0 auto
+
+.header-navigation
+	display: flex
+	justify-content: space-around
+	align-items: center
+	box-sizing: border-box
+	position: relative
+
+.header-navigation__items
+	display: flex
+	width: 502px
+	justify-content: space-around
+	padding-top: 40px
+
+.header-navigstion__logo
+	position: absolute
+	top: 25px
+	margin: 0px auto
+
+.header-navigation__link
+	color: #fff
+	font-family: 'Open Sans', sans-serif
+	font-family: Open Sans
+	font-style: normal
+	font-weight: bold
+	font-size: 14px
+	line-height: 18px
+
+	&::after
+		content: ''
+		display: block
+		width: 100%
+		height: 2px
+		background: #fff
+		margin-top: 4px
+		transition: transform .3s
+		transform: scaleX(0)
+
+	&:hover::after
+		transform: scaleX(1)
+
+.header__data
+	transform: rotate(90deg)
+	width: 280px
+	height: 200px
+	text-align: center
+	float: left
+	margin-top: 230px
+	margin-left: 80px
+	font-family: Open Sans
+	font-style: normal
+	font-weight: bold
+	font-size: 12px
+	line-height: 12px
+
+.header__content
+	height: 400px
+	text-transform: uppercase
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	margin: 100px 425px
+	width: 1000px
+	transition: 0.5s
+
+.header-content__title
+	font-family: Open Sans
+	font-style: normal
+	font-weight: bold
+	font-size: 12px
+	line-height: 14px
+	margin: 0
+	text-align: center
+	letter-spacing: 6px
+
+.header-content__oglovlenie
+	font-family: Dosis
+	font-style: normal
+	font-weight: bold
+	font-size: 96px
+	// line-height: 0px
+	text-align: center
+	margin: 0
+
+	&::after
+		content: ''
+		display: block
+		width: 60px
+		height: 5.11px
+		background: #E8C300
+		border-radius: 50px
+		margin: 0 auto
+		margin-bottom: 31px
+
+.btn
+	width: 200px
+	height: 60px
+	border-radius: 5px
+	box-sizing: border-box
+	background: none
+	font-family: Open Sans
+	font-style: normal
+	font-weight: bold
+	font-size: 12px
+	line-height: 20px
+	color: #fff
+	border: 1px solid #ffffff50
+	outline: none
+	margin-right: 40px
+	transition: background 0.4s
+
+	&:hover
+		background: #E8C300
+		border: transparent
+
+.heaeder-content__arrow::before
+	
