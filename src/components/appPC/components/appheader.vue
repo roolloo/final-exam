@@ -34,21 +34,28 @@
           </li>
         </ul>
       </nav>
-    </div>
 
-    <p class="header__data">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
+      <div class="header__content">
+        <p class="header-content__data">
+          Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM
+        </p>
+        <div class="header-content__center">
+          <p class="header-content__title">RESTAURANT</p>
+          <h1 class="header-content__oglovlenie">hungry people</h1>
 
-    <div class="header__content">
-      <p class="header-content__title">RESTAURANT</p>
-      <h1 class="header-content__oglovlenie">hungry people</h1>
+          <div class="header-content__btn">
+            <button class="header-content__one btn">BOOK TABLE</button>
+            <button class="header-content__tue btn">EXPLORE</button>
+          </div>
+          <a href="#" class="heaeder-content__arrow"> </a>
+        </div>
 
-      <div class="header-content__btn">
-        <button class="header-content__one btn">BOOK TABLE</button>
-        <button class="header-content__tue btn">EXPLORE</button>
+        <div class="header__socual">
+          <a href="" class="header-socual__link"></a>
+          <a href="" class="header-socual__link"></a>
+          <a href="" class="header-socual__link"></a>
+        </div>
       </div>
-		<a href="#" class="heaeder-content__arrow">
-        
-		</a>
     </div>
   </header>
 </template>
@@ -61,6 +68,5 @@ export default {
 </script>
 
 <style lang="sass">
-
 @import './sass/header'
 </style>
