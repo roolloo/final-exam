@@ -118,7 +118,13 @@
 </template>
 
 <script>
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import SwiperCore, {
+  Navigation,
+  EffectCube,
+  Pagination,
+  Scrollbar,
+  A11y,
+} from "swiper";
 
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from "swiper/vue";
@@ -128,9 +134,10 @@ import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
 import "swiper/components/scrollbar/scrollbar.scss";
+import "swiper/components/effect-cube/effect-cube.min.css";
 
 // install Swiper modules
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
+SwiperCore.use([Navigation, EffectCube, Pagination, Scrollbar, A11y]);
 
 // Import Swiper styles
 export default {
