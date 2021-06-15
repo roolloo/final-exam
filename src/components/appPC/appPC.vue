@@ -5,6 +5,7 @@
   <appbook></appbook>
   <appslider></appslider>
   <appmenu></appmenu>
+  <appprivat></appprivat>
 </template>
 
 <script>
@@ -14,6 +15,8 @@ import appTeam from "./components/appTeam.vue";
 import appbook from "./components/appbook.vue";
 import appslider from "./components/appslider.vue";
 import appmenu from "./components/appmenu.vue";
+import appprivat from "./components/appprivat.vue";
+
 export default {
   name: "appPc",
   components: {
@@ -23,6 +26,7 @@ export default {
     appbook,
     appslider,
     appmenu,
+    appprivat,
   },
 };
 </script>

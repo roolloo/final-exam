@@ -86,7 +86,9 @@
         Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM, Phone: +40 729 131 637/+40
         726 458 782
       </p>
+    
     </div>
+	
   </section>
 </template>
 
