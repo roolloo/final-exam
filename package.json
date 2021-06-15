@@ -17,7 +17,8 @@
     "swiper": "^6.7.0",
     "virtual": "^0.2.0",
     "vue": "^3.0.0",
-    "vue-slick": "^1.1.16"
+    "vue-slick": "^1.1.16",
+    "vue-yandex-maps": "^0.10.11"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

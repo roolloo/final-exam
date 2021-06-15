@@ -5,19 +5,17 @@
     height="475"
     frameborder="0"
   ></iframe>
+
+  <div class="coperaite">© Copyright Mindblister 2019</div>
 </template>
 
 <script>
 export default {
   name: "appma",
-  data() {
-},
-methods: {
-	myMap.controls.remove('zoomControl')
-}
-}
+  data() {},
+};
 </script>
 
 <style lang="sass">
-@import './sass/Team'
+@import './sass/map'
 </style>
