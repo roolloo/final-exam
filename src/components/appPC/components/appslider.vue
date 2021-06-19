@@ -17,7 +17,10 @@
         <div class="slide__fix">
           <div class="slide__img">
             <span class="swiper-no-swiping">
-              <img src="./assetsPC/Rectangle2.png" alt="/"
+              <img class="slide-img__ad"
+                slide-img__ad
+                src="./assetsPC/Rectangle2.png"
+                alt="/"
             /></span>
           </div>
           <div class="slide__text">
@@ -52,7 +55,10 @@
         <div class="slide__fix">
           <div class="slide__img">
             <span class="swiper-no-swiping">
-              <img src="./assetsPC/Rectangle2.png" alt="/"
+              <img
+                class="slide-img__ad"
+                src="./assetsPC/Rectangle2.png"
+                alt="/"
             /></span>
           </div>
           <div class="slide__text">
@@ -87,7 +93,10 @@
         <div class="slide__fix">
           <div class="slide__img">
             <span class="swiper-no-swiping">
-              <img src="./assetsPC/Rectangle2.png" alt="/"
+              <img
+                class="slide-img__ad"
+                src="./assetsPC/Rectangle2.png"
+                alt="/"
             /></span>
           </div>
           <div class="slide__text">

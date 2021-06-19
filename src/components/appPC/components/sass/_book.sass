@@ -26,6 +26,9 @@
 		content: ''
 		display: block
 		margin: 20px auto
+		transition: transform .5s
+	&:hover::after
+		transform: scaleX(3)
 
 .book__form
 	display: flex
@@ -158,3 +161,29 @@
 	text-align: center
 	color: #33333370
 
+@media ( max-width: 1024px)
+	.book__text
+		width: 400px
+		max-width: 100%
+	.book-text__paragraph
+		font-size: 15px
+	.book-text__content
+		text-align: center
+		font-size: 12px
+	.book-img__ad
+		width: 377px
+		height: 377px
+	.book__img::before
+		width: 150px
+		height: 150px
+		top: 25%
+		right: -8%
+	.book__form
+		width: 50%
+		margin: 0 auto
+		padding-bottom: 45px
+	.form__left
+		margin-bottom: -10px
+@media ( max-width: 768px)
+	.book__img
+		display: none

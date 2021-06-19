@@ -79,7 +79,7 @@
           </form>
         </div>
         <div class="book__img">
-          <img src="./assetsPC/about.png" alt="/" />
+          <img class="book-img__ad" src="./assetsPC/about.png" alt="/" />
         </div>
       </div>
       <p class="book__data">

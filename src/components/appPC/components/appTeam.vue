@@ -5,7 +5,7 @@
 
       <div class="team__fix">
         <div class="team__img">
-          <img src="./assetsPC/Rectangle.png" alt="/" />
+          <img class="team-img__ad" src="./assetsPC/Rectangle.png" alt="/" />
         </div>
         <div class="team__text">
           <h2 class="team-text__title">MASTER CHEF</h2>

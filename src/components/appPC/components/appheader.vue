@@ -2,37 +2,71 @@
   <header class="header">
     <div class="conteiner">
       <nav class="header-navigation">
-        <ul class="header-navigation__items">
+        <ul class="header-navigation__items" v-if="open">
           <li class="header-navigation">
-            <a class="header-navigation__link" href="">HOME</a>
+            <a class="header-navigation__link" href="#">HOME</a>
           </li>
           <li class="header-navigation">
-            <a class="header-navigation__link" href="">ABOUT</a>
+            <a class="header-navigation__link" href="#">ABOUT</a>
           </li>
           <li class="header-navigation">
-            <a class="header-navigation__link" href="">TEAM</a>
+            <a class="header-navigation__link" href="#">TEAM</a>
           </li>
           <li class="header-navigation">
-            <a class="header-navigation__link" href="">BOOKING</a>
+            <a class="header-navigation__link" href="#">BOOKING</a>
+          </li>
+        </ul>
+        <ul class="header-navigation__items navig">
+          <li class="header-navigation">
+            <a class="header-navigation__link" href="#">HOME</a>
+          </li>
+          <li class="header-navigation">
+            <a class="header-navigation__link" href="#">ABOUT</a>
+          </li>
+          <li class="header-navigation">
+            <a class="header-navigation__link" href="#">TEAM</a>
+          </li>
+          <li class="header-navigation">
+            <a class="header-navigation__link" href="#">BOOKING</a>
           </li>
         </ul>
         <div class="header-navigstion__logo">
           <a href="#"><img src="./assetsPC/Vector.svg" alt="/" /></a>
         </div>
-        <ul class="header-navigation__items">
+        <ul class="header-navigation__items" v-if="open">
           <li class="header-navigation__item">
-            <a class="header-navigation__link" href="">MENU</a>
+            <a class="header-navigation__link" href="#">MENU</a>
           </li>
           <li class="header-navigation__item">
-            <a class="header-navigation__link" href="">GALERIE</a>
+            <a class="header-navigation__link" href="#">GALERIE</a>
           </li>
           <li class="header-navigation__item">
-            <a class="header-navigation__link" href="">EVENTS</a>
+            <a class="header-navigation__link" href="#">EVENTS</a>
           </li>
           <li class="header-navigation__item">
-            <a class="header-navigation__link" href="">CONTACT</a>
+            <a class="header-navigation__link" href="#">CONTACT</a>
           </li>
         </ul>
+        <ul class="header-navigation__items navig">
+          <li class="header-navigation__item">
+            <a class="header-navigation__link" href="#">MENU</a>
+          </li>
+          <li class="header-navigation__item">
+            <a class="header-navigation__link" href="#">GALERIE</a>
+          </li>
+          <li class="header-navigation__item">
+            <a class="header-navigation__link" href="#">EVENTS</a>
+          </li>
+          <li class="header-navigation__item">
+            <a class="header-navigation__link" href="#">CONTACT</a>
+          </li>
+        </ul>
+        <button @click="close2()" v-if="open" class="header-navigstion__burger">
+          <i class="fas fa-fish"></i>
+        </button>
+        <button v-if="close" @click="open2()" class="header-navigstion__burger">
+          <i class="fas fa-fish"></i>
+        </button>
       </nav>
 
       <div class="header__content">
@@ -69,7 +103,20 @@
 <script>
 export default {
   name: "appheader",
-  data() {},
+  data() {
+    return {
+      close: true,
+      open: false,
+    };
+  },
+  methods: {
+    open2() {
+      return (this.open = true), (this.close = false);
+    },
+    close2() {
+      return (this.open = false), (this.close = true);
+    },
+  },
 };
 </script>
 

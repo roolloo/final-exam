@@ -103,6 +103,7 @@
 	text-transform: uppercase
 	letter-spacing: 1px
 	margin-bottom: 0px
+	
 	&::after
 		content: ''
 		display: block
@@ -111,6 +112,9 @@
 		background: #E8C300
 		margin: 0 auto
 		border-radius: 50px
+		transition: transform .5s
+	&:hover::after
+		transform: scaleX(3)
 .header__socual
 	width: 60px
 .header-content__btn
@@ -168,7 +172,7 @@
 	display: flex
 	flex-direction: column
 	justify-content: space-between
-	transform: translate(-60px,-90px)
+	transform: translate(-60px,-110px)
 
 .header-socual__link
 	width: 60px
@@ -186,3 +190,94 @@
 	&:hover
 		color: #000
 		background: #fff
+
+.header-navigstion__burger
+	display: none
+
+@media ( max-width: 768px)
+
+	.navig
+		display: none
+	.header-content__oglovlenie
+		font-size: 70px
+	.header-navigstion__logo
+		top: 5px
+		left: 15px
+		margin: 0px auto
+		transform: scale(0.6)
+		position: fixed
+		z-index: 5
+	.header-navigstion__burger
+		display: block
+		font-size: 40px
+		border: none
+		background: none
+		outline: none
+		color: #E8C200
+		position: fixed
+		right: 40px
+		top: 45px
+		z-index: 5
+
+	.header-navigation__items
+		position: fixed
+		text-align: center
+		background: #E8C200
+		left: 0
+		right: 0
+		margin: 0 auto
+		width: 400px
+		z-index: 5
+	.heaeder-content__arrow
+		display: none
+	.header-navigation__items:nth-of-type(1)
+		top: 30px
+	.header__socual
+		transform: translate(-40px,-110px)
+@media ( max-width: 425px)
+	.header-navigstion__logo
+		top: -10px
+		left: -50px
+		margin: 0px auto
+		transform: scale(0.4)
+	.header-content__oglovlenie
+		font-size: 30px
+	.header-socual__link
+		width: 30px
+		height: 30px
+		border-radius: 50%
+		padding-top: 5px
+		font-size: 13px
+	.header__socual
+		width: 60px
+		height: 100px
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		transform: translate(-80px,-110px)
+	.header-content__data
+		display: none
+	.conteiner
+		width: 375px
+	.btn
+		border: 1px solid rgba(255, 255, 255, 0.5)
+		width: 120px
+		height: 60px
+	.header-content__btn
+		display: flex
+		width: 440px
+		justify-content: center
+	.header__content
+		justify-content: center
+	.header-navigation__items
+		position: absolute
+		text-align: center
+		background: #E8C200
+		left: 0
+		right: 0
+		margin: 0 auto
+		width: 220px
+	.header-content__data
+		display: none
+	.header__socual
+		transform: translate(10px,-110px)

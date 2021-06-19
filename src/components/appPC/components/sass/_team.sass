@@ -44,7 +44,9 @@
 		content: ''
 		display: block
 		margin: 5px auto
-
+		transition: transform .5s
+	&:hover::after
+		transform: scaleX(3)
 .team-text__paragraph
 	font-family: Open Sans
 	font-weight: bold
@@ -62,7 +64,6 @@
 	line-height: 27px
 	text-align: center
 
-
 .team__img
 	position: relative
 	&::before
@@ -76,3 +77,29 @@
 		border: 20px solid #E8C300
 		top: 25%
 		left: -15%
+@media ( max-width: 1024px)
+	.team__text
+		width: 400px
+		max-width: 100%
+	.team-text__paragraph
+		font-size: 15px
+	.team-text__content
+		text-align: center
+		font-size: 12px
+	.team__img::before
+		width: 150px
+		height: 150px
+		top: 35%
+		left: -8%
+	@media ( max-width: 768px)
+		.team-img__ad
+			width: 250px
+			height: 250px
+		.team__img::before
+			display: none
+		.team__text
+			text-align: center
+			margin: 0 auto
+@media ( max-width: 425px)
+	.team__fix
+		flex-direction: column

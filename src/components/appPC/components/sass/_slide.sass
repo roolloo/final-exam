@@ -53,7 +53,9 @@
 		content: ''
 		display: block
 		margin: 5px auto
-
+		transition: transform .5s
+	&:hover::after
+		transform: scaleX(3)
 .slide-text__paragraph
 	font-family: Open Sans
 	font-weight: bold
@@ -97,3 +99,33 @@
 		border: 20px solid #E8C300
 		top: 25%
 		left: -15%
+
+@media ( max-width: 1024px)
+	.slide__text
+		width: 400px
+		max-width: 100%
+	.slide-text__paragraph
+		font-size: 15px
+	.slide-text__content
+		text-align: center
+		font-size: 12px
+	.slide__img::before
+		width: 150px
+		height: 150px
+		top: 25%
+		left: -15%
+	.slide-img__ad
+		width: 377px
+		height: 377px
+@media ( max-width: 768px)
+	.slide-img__ad
+		width: 250px
+		height: 250px
+	.slide__img::before
+		display: none
+	.slide__text
+		text-align: center
+		margin: 0 auto
+@media ( max-width: 425px)
+	.slide__fix
+		flex-direction: column

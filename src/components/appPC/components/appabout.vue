@@ -16,7 +16,7 @@
         </div>
       </div>
       <div class="about__img">
-        <img src="./assetsPC/about-img.png" alt="/" />
+        <img class="about-img__ad" src="./assetsPC/about-img.png" alt="/" />
       </div>
     </section>
   </div>

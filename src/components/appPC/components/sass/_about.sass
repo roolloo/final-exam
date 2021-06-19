@@ -11,6 +11,9 @@
 	width: 600px
 	max-width: 100%
 
+.about-text__content
+	text-align: center
+
 .about-text__title
 	font-family: Dosis
 	font-style: normal
@@ -28,6 +31,9 @@
 		content: ''
 		display: block
 		margin: 5px auto
+		transition: transform .5s
+	&:hover::after
+		transform: scaleX(3)
 
 .about-text__paragraph
 	font-family: Open Sans
@@ -37,6 +43,7 @@
 	font-size: 18px
 	line-height: 28px
 	text-align: center
+	padding-bottom: 30px
 .about__img
 	position: relative
 	&::before
@@ -50,3 +57,29 @@
 		border: 20px solid #E8C300
 		top: 25%
 		right: -15%
+@media ( max-width: 1024px)
+	.about__text
+		width: 400px
+		max-width: 100%
+	.about-text__paragraph
+		font-size: 15px
+	.about-text__content
+		text-align: center
+		font-size: 12px
+	.about__img::before
+		width: 150px
+		height: 150px
+		top: 35%
+		right: -8%
+@media ( max-width: 768px)
+	.about-img__ad
+		width: 250px
+		height: 250px
+	.about__img::before
+		display: none
+	.about__text
+		text-align: center
+		margin: 0 auto
+@media ( max-width: 425px)
+	.about
+		flex-direction: column
